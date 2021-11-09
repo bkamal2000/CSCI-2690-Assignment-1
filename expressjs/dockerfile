@@ -1,0 +1,15 @@
+FROM node:14.15.4-alpine
+WORKDIR /usr/app
+COPY . .
+
+RUN npm i
+
+
+ENV NODE_ENV production
+RUN npm run build
+
+CMD [ "npm", "start" ]
+
+# on various sources, expressjs is used intermittently with nodejs
+# so I used code associated with nodejs to implement expressjs from my understanding
+# Retreived from: https://github.com/CSCIX691DAL/lab-tutorials/blob/master/lab-1/node/instruction-set-react.md

@@ -1,0 +1,1 @@
+/* Retrieved from: https://www.w3resource.com/mongodb/mongodb-queries-from-collection.php */
